@@ -62,11 +62,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthView.java_SELECTED" value="MonthView" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthlyRenameView.java_SELECTED" value="MonthPickerView" />
+    <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/MonthView.java_SELECTED" value="MonthView" />
+    <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/YearPickerView.java_SELECTED" value="YearPickerView" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system" />
     <property name="memory.settings.postsync.last.time.stamp" value="1625020178973" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.endura.pos_system" />
     </key>
@@ -171,14 +176,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="354" y="132" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1625041675073" />
+    <state x="404" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625043356774">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="404" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1625043356774" />
     <state x="494" y="323" width="452" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1625042105919">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="494" y="323" width="452" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1625042105919" />
+    <state x="498" y="335" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1625043655919">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="498" y="335" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1440.900@0.0.1440.900" timestamp="1625043655919" />
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625042110697">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1625042110697" />
+    <state x="308" y="209" key="AndroidCreateResourceDirectoryDialog" timestamp="1625043383956">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="308" y="209" key="AndroidCreateResourceDirectoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1625043383956" />
     <state x="308" y="209" key="AndroidCreateResourceFileDialog" timestamp="1625026008955">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

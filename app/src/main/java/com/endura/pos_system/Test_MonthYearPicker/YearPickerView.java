@@ -1,10 +1,9 @@
-package com.endura.pos_system;
+package com.endura.pos_system.Test_MonthYearPicker;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +12,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.endura.pos_system.R;
 import com.example.prem.firstpitch.R;
 
 import java.util.HashMap;
