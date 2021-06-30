@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                    tools:context="com.endura.pos_system.ui.Login">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="258dp"
+            android:layout_height="1171dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:background="#DEDEDE" android:id="@+id/linearLayout">
+        <TextView
+                android:text="Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/Homebutton" android:textColor="#8B8D9E"
+                android:translationY="200dp" android:translationX="50dp" android:textSize="30sp"
+                android:fontFamily="@font/roboto"/>
+        <TextView
+                android:text="Sales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/SaleButton" android:textColor="#8B8D9E"
+                android:translationY="250dp" android:translationX="50dp" android:textSize="30sp"
+                android:fontFamily="@font/roboto"/>
+        <TextView
+                android:text="Order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/OrderButton" android:textColor="#8B8D9E"
+                android:translationY="300dp" android:translationX="50dp" android:textSize="30sp"
+                android:fontFamily="@font/roboto"/>
+        <TextView
+                android:text="Store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/StoreButton" android:textColor="#8B8D9E"
+                android:translationY="350dp" android:translationX="50dp" android:textSize="30sp"
+                android:fontFamily="@font/roboto"/>
+        <TextView
+                android:text="Financial Management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/FinancialButton" android:textColor="#8B8D9E"
+                android:translationY="400dp" android:translationX="50dp" android:textSize="30sp"
+                android:fontFamily="@font/roboto"/>
+        <TextView
+                android:text="Customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/CustomerButton" android:textColor="#8B8D9E"
+                android:translationY="450dp" android:translationX="50dp" android:textSize="30sp"
+                android:fontFamily="@font/roboto"/>
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp" app:srcCompat="@drawable/ic_homeicon" android:id="@+id/Homeicon"
+                android:translationY="-75dp" android:translationX="10dp" android:contentDescription="Homeicon"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp" app:srcCompat="@drawable/ic_sales" android:id="@+id/SalesIcon"
+                app:tint="#8B8E9D" android:translationX="10dp" android:translationY="-20dp"/>
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="35dp" app:srcCompat="@drawable/ic_order" android:id="@+id/Ordericon"
+                app:tint="#8B8E9D" android:translationX="13dp" android:translationY="40dp"/>
+        <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp" app:srcCompat="@drawable/ic_store" android:id="@+id/Storeicon"
+                android:translationX="8dp" android:translationY="95dp" app:tint="#8B8E9D"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_financialicon"
+                android:id="@+id/FinaicialIcon" app:tint="#8B8E9D" android:translationX="5dp"
+                android:translationY="175dp"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/circle" android:id="@+id/POSLogo2"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="1025dp" android:translationX="-200dp"/>
+    <TextView
+            android:text="POS System"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/POSLogo4"
+            android:textSize="40sp" android:textColor="#FFFFFF"
+            android:fontFamily="@font/roboto" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="344dp" android:layout_marginLeft="344dp"
+            android:layout_marginTop="44dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="544dp"
+            android:layout_height="89dp"
+            app:counterEnabled="true" app:counterMaxLength="15"
+            app:errorEnabled="true"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="825dp" android:layout_marginStart="825dp" android:layout_marginTop="500dp"
+            android:id="@+id/LoginBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="534dp"
+                android:layout_height="53dp"
+                android:hint="LoginID" android:id="@+id/LoginID" android:cursorVisible="true"
+                android:maxLength="15"
+                android:fontFamily="@font/roboto"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="534dp"
+            android:layout_height="53dp"
+            android:id="@+id/PasswordBox"
+            app:passwordToggleEnabled="true"
+            app:layout_constraintTop_toBottomOf="@+id/LoginBox"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout" android:layout_marginLeft="825dp"
+            android:layout_marginStart="825dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="548dp"
+                android:layout_height="match_parent"
+                android:hint="Password" android:singleLine="true" android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+            android:text="SIGN IN"
+            android:layout_width="534dp"
+            android:layout_height="48dp" android:id="@+id/Signinbutton"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/PasswordBox"
+            android:layout_marginLeft="825dp" android:layout_marginStart="825dp" android:layout_marginTop="40dp"
+            app:backgroundTint="#572EFF"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
