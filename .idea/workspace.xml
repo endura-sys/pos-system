@@ -20,7 +20,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/sidanla/.android/avd/Nexus_10_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/kdwivedi/.android/avd/10.1_WXGA_Tablet_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -31,7 +31,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pos-system" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -64,9 +69,10 @@
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthlyRenameView.java_SELECTED" value="MonthPickerView" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/MonthView.java_SELECTED" value="MonthView" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/YearPickerView.java_SELECTED" value="YearPickerView" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1625020178973" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1625194198216" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -112,7 +118,7 @@
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <Auto>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
@@ -170,39 +176,5 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/pos-system" />
     </ignored-roots>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="354" y="132" key="#Inspections" timestamp="1625041675073">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="354" y="132" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1625041675073" />
-    <state x="404" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1625043356774">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="404" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1625043356774" />
-    <state x="494" y="323" width="452" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1625042105919">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="494" y="323" width="452" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1625042105919" />
-    <state x="498" y="335" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1625043655919">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="498" y="335" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1440.900@0.0.1440.900" timestamp="1625043655919" />
-    <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625042110697">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1625042110697" />
-    <state x="308" y="209" key="AndroidCreateResourceDirectoryDialog" timestamp="1625043383956">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="308" y="209" key="AndroidCreateResourceDirectoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1625043383956" />
-    <state x="308" y="209" key="AndroidCreateResourceFileDialog" timestamp="1625026008955">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="308" y="209" key="AndroidCreateResourceFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1625026008955" />
-    <state x="221" y="57" key="SettingsEditor" timestamp="1625018655491">
-      <screen x="0" y="25" width="1440" height="792" />
-    </state>
-    <state x="221" y="57" key="SettingsEditor/0.25.1440.792@0.25.1440.792" timestamp="1625018655491" />
   </component>
 </project>
