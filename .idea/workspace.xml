@@ -20,7 +20,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/kdwivedi/.android/avd/10.1_WXGA_Tablet_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/sidanla/.android/avd/Nexus_10_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -68,6 +68,7 @@
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthView.java_SELECTED" value="MonthView" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthlyRenameView.java_SELECTED" value="MonthPickerView" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/MonthView.java_SELECTED" value="MonthView" />
+    <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/MonthlyRenameView.java_SELECTED" value="MonthPickerView" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/YearPickerView.java_SELECTED" value="YearPickerView" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
