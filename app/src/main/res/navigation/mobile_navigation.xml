@@ -12,14 +12,33 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.endura.pos_system.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_sale"
+        android:name="com.endura.pos_system.ui.sale.SaleFragment"
+        android:label="@string/menu_sale"
+        tools:layout="@layout/fragment_sale" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_slideshow"-->
+<!--        android:name="com.endura.pos_system.ui.slideshow.SlideshowFragment"-->
+<!--        android:label="@string/menu_store"-->
+<!--        tools:layout="@layout/fragment_slideshow" />-->
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.endura.pos_system.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_order"
+        android:name="com.endura.pos_system.ui.order.OrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_store"
+        android:name="com.endura.pos_system.ui.store.StoreFragment"
+        android:label="@string/menu_store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/nav_finance"
+        android:name="com.endura.pos_system.ui.finance.FinanceFragment"
+        android:label="@string/menu_financial_management"
+        tools:layout="@layout/fragment_finance" />
+
 </navigation>

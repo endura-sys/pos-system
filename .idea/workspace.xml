@@ -17,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Tab_s7_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -45,14 +45,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Tab_s7_API_30" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-30T02:25:44.146Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.endura.pos_system.base" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system/ui/order" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system/ui" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system/ui/finance" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system/ui/store" />
     </key>
   </component>
   <component name="RunManager">
@@ -63,7 +72,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="pos-system.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -140,6 +149,35 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2063" y="-141" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1625042272032">
+      <screen x="1440" y="-155" width="1920" height="1055" />
+    </state>
+    <state x="2063" y="-166" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040881085" />
+    <state x="2063" y="-141" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625042272032" />
+    <state width="1396" height="129" key="GridCell.Tab.0.bottom" timestamp="1625194534998">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state width="1876" height="201" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040479323" />
+    <state width="1396" height="201" key="GridCell.Tab.0.bottom/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625036616081" />
+    <state width="1396" height="129" key="GridCell.Tab.0.bottom/0.25.1440.792@0.25.1440.792" timestamp="1625194534998" />
+    <state width="1396" height="129" key="GridCell.Tab.0.center" timestamp="1625194534998">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state width="1876" height="201" key="GridCell.Tab.0.center/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040479322" />
+    <state width="1396" height="201" key="GridCell.Tab.0.center/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625036616080" />
+    <state width="1396" height="129" key="GridCell.Tab.0.center/0.25.1440.792@0.25.1440.792" timestamp="1625194534998" />
+    <state width="1396" height="129" key="GridCell.Tab.0.left" timestamp="1625194534997">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state width="1876" height="201" key="GridCell.Tab.0.left/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040479322" />
+    <state width="1396" height="201" key="GridCell.Tab.0.left/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625036616079" />
+    <state width="1396" height="129" key="GridCell.Tab.0.left/0.25.1440.792@0.25.1440.792" timestamp="1625194534997" />
+    <state width="1396" height="129" key="GridCell.Tab.0.right" timestamp="1625194534998">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state width="1876" height="201" key="GridCell.Tab.0.right/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040479323" />
+    <state width="1396" height="201" key="GridCell.Tab.0.right/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625036616081" />
+    <state width="1396" height="129" key="GridCell.Tab.0.right/0.25.1440.792@0.25.1440.792" timestamp="1625194534998" />
     <state x="221" y="57" key="SettingsEditor" timestamp="1625018655491">
       <screen x="0" y="25" width="1440" height="792" />
     </state>

@@ -1,16 +1,16 @@
-package com.endura.pos_system.ui.gallery;
+package com.endura.pos_system.ui.store;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class StoreViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public StoreViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is storeeeeeeee fragment");
     }
 
     public LiveData<String> getText() {
