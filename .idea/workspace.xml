@@ -177,4 +177,10 @@
       <path value="$PROJECT_DIR$/pos-system" />
     </ignored-roots>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1625219313357">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875@0.25.1440.875" timestamp="1625219313357" />
+  </component>
 </project>

@@ -1,15 +1,22 @@
 package com.endura.pos_system.ui;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import com.endura.pos_system.MainActivity;
+import com.endura.pos_system.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 
 public class Login extends Activity {
     private TextInputLayout textInputLoginID;
     private TextInputLayout textInputPassword;
+    private Button Signinbutton;
 
 
 
@@ -19,8 +26,9 @@ public class Login extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(com.endura.pos_system.R.layout.activity_login);
 
-        textInputLoginID = findViewById(com.endura.pos_system.R.id.LoginBox);
-        textInputPassword = findViewById(com.endura.pos_system.R.id.PasswordBox);
+        EditText textInputLoginID = findViewById(com.endura.pos_system.R.id.LoginBox);
+        EditText textInputPassword = findViewById(com.endura.pos_system.R.id.PasswordBox);
+        Signinbutton = findViewById(R.id.Signinbutton);
     }
 
     private boolean ValidateLoginID() {
@@ -57,6 +65,28 @@ public class Login extends Activity {
         input += "Password: " + textInputPassword.getEditText().getText().toString();
 
         Toast.makeText(this, input, Toast.LENGTH_SHORT).show();
+    }
+
+    private void loginDetails() {
+
+        Signinbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String attemptLogin = textInputLoginID.getEditText().getText().toString();
+                String attemptPassword = textInputPassword.getEditText().getText().toString();
+                    if(attemptLogin.equals("admin") && attemptPassword.equals("Password123%")) {
+                        openmain_activity();
+                    }
+                        else {
+                            textInputLoginID.setError("Wrong LoginID/Password");
+                            textInputPassword.setError("Wrong LoginID/Password");
+                        }
+                }
+            });
+        }
+    public void openmain_activity(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
 }
