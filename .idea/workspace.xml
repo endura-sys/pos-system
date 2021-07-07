@@ -17,7 +17,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Tab_s7_API_30]" />
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/sidanla/.android/avd/Nexus_10_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -28,12 +31,27 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pos-system" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,23 +63,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Tab_s7_API_30" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-30T02:25:44.146Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthView.java_SELECTED" value="MonthView" />
+    <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthlyRenameView.java_SELECTED" value="MonthPickerView" />
+    <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/MonthView.java_SELECTED" value="MonthView" />
+    <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/MonthlyRenameView.java_SELECTED" value="MonthPickerView" />
+    <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/Test_MonthYearPicker/YearPickerView.java_SELECTED" value="YearPickerView" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1625194198216" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.endura.pos_system" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.endura.pos_system.base" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system/ui/order" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system/ui" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system/ui/finance" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system/ui/store" />
+    <key name="android.template.-2105169445">
+      <recent name="com.endura.pos_system" />
     </key>
   </component>
   <component name="RunManager">
@@ -72,7 +100,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="pos-system.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -80,6 +108,7 @@
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -90,7 +119,7 @@
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <Auto>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
@@ -130,6 +159,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -149,38 +179,9 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2063" y="-141" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1625042272032">
-      <screen x="1440" y="-155" width="1920" height="1055" />
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1625219313357">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="2063" y="-166" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040881085" />
-    <state x="2063" y="-141" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625042272032" />
-    <state width="1396" height="129" key="GridCell.Tab.0.bottom" timestamp="1625194534998">
-      <screen x="0" y="25" width="1440" height="792" />
-    </state>
-    <state width="1876" height="201" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040479323" />
-    <state width="1396" height="201" key="GridCell.Tab.0.bottom/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625036616081" />
-    <state width="1396" height="129" key="GridCell.Tab.0.bottom/0.25.1440.792@0.25.1440.792" timestamp="1625194534998" />
-    <state width="1396" height="129" key="GridCell.Tab.0.center" timestamp="1625194534998">
-      <screen x="0" y="25" width="1440" height="792" />
-    </state>
-    <state width="1876" height="201" key="GridCell.Tab.0.center/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040479322" />
-    <state width="1396" height="201" key="GridCell.Tab.0.center/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625036616080" />
-    <state width="1396" height="129" key="GridCell.Tab.0.center/0.25.1440.792@0.25.1440.792" timestamp="1625194534998" />
-    <state width="1396" height="129" key="GridCell.Tab.0.left" timestamp="1625194534997">
-      <screen x="0" y="25" width="1440" height="792" />
-    </state>
-    <state width="1876" height="201" key="GridCell.Tab.0.left/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040479322" />
-    <state width="1396" height="201" key="GridCell.Tab.0.left/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625036616079" />
-    <state width="1396" height="129" key="GridCell.Tab.0.left/0.25.1440.792@0.25.1440.792" timestamp="1625194534997" />
-    <state width="1396" height="129" key="GridCell.Tab.0.right" timestamp="1625194534998">
-      <screen x="0" y="25" width="1440" height="792" />
-    </state>
-    <state width="1876" height="201" key="GridCell.Tab.0.right/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1625040479323" />
-    <state width="1396" height="201" key="GridCell.Tab.0.right/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625036616081" />
-    <state width="1396" height="129" key="GridCell.Tab.0.right/0.25.1440.792@0.25.1440.792" timestamp="1625194534998" />
-    <state x="221" y="57" key="SettingsEditor" timestamp="1625018655491">
-      <screen x="0" y="25" width="1440" height="792" />
-    </state>
-    <state x="221" y="57" key="SettingsEditor/0.25.1440.792@0.25.1440.792" timestamp="1625018655491" />
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875@0.25.1440.875" timestamp="1625219313357" />
   </component>
 </project>

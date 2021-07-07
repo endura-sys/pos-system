@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Possystem">
+        <activity android:name=".Test_MonthYearPicker.MonthPicker"></activity>
+        <activity android:name=".YearPickerView" />
+        <activity android:name=".MonthViewAdapter" />
+        <activity android:name=".MonthView" />
+        <activity android:name=".MonthlyView" />
+        <activity android:name=".Test_MonthYearPicker.MonthPickerDialog" />
+        <activity android:name=".OrderActivity" />
         <activity
             android:name=".base.BaseActivity"
             android:label="@string/app_name"
@@ -19,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

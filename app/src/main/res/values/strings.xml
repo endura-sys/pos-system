@@ -13,4 +13,13 @@
     <string name="menu_store">Store</string>
     <string name="menu_financial_management">Financial Management</string>
 
+    <string name="Order_Records">Order Records</string>
+    <string name="All_Orders">All Orders</string>
+    <string name="Pending">Pending</string>
+    <string name="Completed">Completed</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Next">Next</string>
+    <string name="Previous">Previous</string>
+    <string name="Entries">Showing 1 to 10 of 100 entries</string>
+
 </resources>
