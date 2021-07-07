@@ -1,4 +1,4 @@
-package com.endura.pos_system.ui.gallery;
+package com.endura.pos_system.ui.store;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.endura.pos_system.R;
 
-public class GalleryFragment extends Fragment {
+public class StoreFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private StoreViewModel storeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        storeViewModel =
+                new ViewModelProvider(this).get(StoreViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_store, container, false);
+        final TextView textView = root.findViewById(R.id.text_store);
+        storeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

@@ -1,4 +1,4 @@
-package com.endura.pos_system.ui.slideshow;
+package com.endura.pos_system.ui.order;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.endura.pos_system.R;
 
-public class SlideshowFragment extends Fragment {
+public class OrderFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private OrderViewModel orderViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        orderViewModel =
+                new ViewModelProvider(this).get(OrderViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_order, container, false);
+        final TextView textView = root.findViewById(R.id.text_order);
+        orderViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

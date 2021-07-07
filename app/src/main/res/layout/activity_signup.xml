@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.endura.pos_system.ui.Login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="258dp"
+        android:layout_height="1171dp"
+        android:background="#DEDEDE"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Homebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Home"
+            android:textColor="#8B8D9E"
+            android:textSize="30sp"
+            android:translationX="50dp"
+            android:translationY="200dp" />
+
+        <TextView
+            android:id="@+id/SaleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Sales"
+            android:textColor="#8B8D9E"
+            android:textSize="30sp"
+            android:translationX="50dp"
+            android:translationY="250dp" />
+
+        <TextView
+            android:id="@+id/OrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Order"
+            android:textColor="#8B8D9E"
+            android:textSize="30sp"
+            android:translationX="50dp"
+            android:translationY="300dp" />
+
+        <TextView
+            android:id="@+id/StoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Store"
+            android:textColor="#8B8D9E"
+            android:textSize="30sp"
+            android:translationX="50dp"
+            android:translationY="350dp" />
+
+        <TextView
+            android:id="@+id/FinancialButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Financial Management"
+            android:textColor="#8B8D9E"
+            android:textSize="30sp"
+            android:translationX="50dp"
+            android:translationY="400dp" />
+
+        <TextView
+            android:id="@+id/CustomerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Customer"
+            android:textColor="#8B8D9E"
+            android:textSize="30sp"
+            android:translationX="50dp"
+            android:translationY="450dp" />
+
+        <ImageView
+            android:id="@+id/Homeicon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="Homeicon"
+            android:translationX="10dp"
+            android:translationY="-75dp"
+            app:srcCompat="@drawable/ic_homeicon" />
+
+        <ImageView
+            android:id="@+id/SalesIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:translationX="10dp"
+            android:translationY="-20dp"
+            app:srcCompat="@drawable/ic_sales"
+            app:tint="#8B8E9D" />
+
+        <ImageView
+            android:id="@+id/Ordericon"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:translationX="13dp"
+            android:translationY="40dp"
+            app:srcCompat="@drawable/ic_order"
+            app:tint="#8B8E9D" />
+
+        <ImageView
+            android:id="@+id/Storeicon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:translationX="8dp"
+            android:translationY="95dp"
+            app:srcCompat="@drawable/ic_store"
+            app:tint="#8B8E9D" />
+
+        <ImageView
+            android:id="@+id/FinaicialIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="5dp"
+            android:translationY="175dp"
+            app:srcCompat="@drawable/ic_financialicon"
+            app:tint="#8B8E9D" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/POSLogo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1025dp"
+        android:translationX="-200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/POSLogo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="344dp"
+        android:layout_marginLeft="344dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/roboto"
+        android:text="POS System"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signUpBox"
+        android:layout_width="544dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="825dp"
+        android:layout_marginLeft="825dp"
+        android:layout_marginTop="500dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SignUp"
+            android:layout_width="534dp"
+            android:layout_height="53dp"
+            android:cursorVisible="true"
+            android:fontFamily="@font/roboto"
+            android:hint="Sign Up Email"
+            android:maxLength="15" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordBox"
+        android:layout_width="534dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="825dp"
+        android:layout_marginLeft="825dp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBox"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="548dp"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Signinbutton"
+        android:layout_width="534dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="825dp"
+        android:layout_marginLeft="825dp"
+        android:text="CONFIRM"
+        app:backgroundTint="#572EFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="824dp"
+        android:layout_marginLeft="824dp"
+        android:text="I agree to the privacy policies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
