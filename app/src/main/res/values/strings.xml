@@ -12,6 +12,7 @@
     <string name="menu_order">Order</string>
     <string name="menu_store">Store</string>
     <string name="menu_financial_management">Financial Management</string>
+    <string name="menu_logout">Logout</string>
 
     <string name="Order_Records">Order Records</string>
     <string name="All_Orders">All Orders</string>

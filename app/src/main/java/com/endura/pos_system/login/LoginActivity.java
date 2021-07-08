@@ -30,7 +30,6 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         submit = findViewById(R.id.login_button);
 
-
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
