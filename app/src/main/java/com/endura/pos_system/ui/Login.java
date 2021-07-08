@@ -18,17 +18,14 @@ public class Login extends Activity {
     private TextInputLayout textInputPassword;
     private Button Signinbutton;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(com.endura.pos_system.R.layout.activity_login);
 
-        EditText textInputLoginID = findViewById(com.endura.pos_system.R.id.LoginBox);
-        EditText textInputPassword = findViewById(com.endura.pos_system.R.id.PasswordBox);
-        Signinbutton = findViewById(R.id.Signinbutton);
+        EditText textInputLoginID = findViewById(R.id.textview);
+        EditText textInputPassword = findViewById(R.id.PasswordBox);
+        Button Signinbutton = findViewById(R.id.Signinbutton);
     }
 
     private boolean ValidateLoginID() {

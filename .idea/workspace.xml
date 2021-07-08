@@ -20,7 +20,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Tab_s7_API_30]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -78,8 +78,8 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.-2105169445">
-      <recent name="com.endura.pos_system" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.endura.pos_system" />
@@ -92,8 +92,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.endura.pos_system.base" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/endura/pos_system" />
+    <key name="android.template.-2105169445">
+      <recent name="com.endura.pos_system" />
     </key>
   </component>
   <component name="RunManager">
@@ -104,7 +104,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="pos-system.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -186,5 +186,25 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875@0.25.1440.875" timestamp="1625219313357" />
+    <state x="484" y="294" width="471" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1625645470755">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state x="484" y="294" width="471" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.25.1440.792@0.25.1440.792" timestamp="1625645470755" />
+    <state width="1396" height="129" key="GridCell.Tab.0.bottom" timestamp="1625651603588">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state width="1396" height="129" key="GridCell.Tab.0.bottom/0.25.1440.792@0.25.1440.792" timestamp="1625651603588" />
+    <state width="1396" height="129" key="GridCell.Tab.0.center" timestamp="1625651603587">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state width="1396" height="129" key="GridCell.Tab.0.center/0.25.1440.792@0.25.1440.792" timestamp="1625651603587" />
+    <state width="1396" height="129" key="GridCell.Tab.0.left" timestamp="1625651603587">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state width="1396" height="129" key="GridCell.Tab.0.left/0.25.1440.792@0.25.1440.792" timestamp="1625651603587" />
+    <state width="1396" height="129" key="GridCell.Tab.0.right" timestamp="1625651603587">
+      <screen x="0" y="25" width="1440" height="792" />
+    </state>
+    <state width="1396" height="129" key="GridCell.Tab.0.right/0.25.1440.792@0.25.1440.792" timestamp="1625651603587" />
   </component>
 </project>

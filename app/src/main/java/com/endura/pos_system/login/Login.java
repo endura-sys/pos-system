@@ -26,7 +26,7 @@ public class Login extends Activity {
 
         EditText textInputLoginID = findViewById(R.id.signUpBox);
         EditText textInputPassword = findViewById(R.id.PasswordBox);
-        Signinbutton = findViewById(R.id.Signinbutton);
+        Button Signinbutton = findViewById(R.id.Signinbutton);
     }
 
     private boolean ValidateLoginID() {
