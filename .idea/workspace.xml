@@ -7,6 +7,9 @@
       </config>
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
@@ -64,7 +67,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Tab_s7_API_30" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-07T07:57:57.060Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-08T05:51:14.730Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthView.java_SELECTED" value="MonthView" />
@@ -182,6 +185,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="1916" y="-10" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625722976995">
+      <screen x="1440" y="-155" width="1920" height="1055" />
+    </state>
+    <state x="1916" y="-10" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625722976995" />
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1625219313357">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -190,21 +197,33 @@
       <screen x="0" y="25" width="1440" height="792" />
     </state>
     <state x="484" y="294" width="471" height="262" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.25.1440.792@0.25.1440.792" timestamp="1625645470755" />
-    <state width="1396" height="129" key="GridCell.Tab.0.bottom" timestamp="1625651603588">
+    <state x="458" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625713910274">
       <screen x="0" y="25" width="1440" height="792" />
     </state>
+    <state x="458" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.792@0.25.1440.792" timestamp="1625713910274" />
+    <state x="1795" y="-55" width="1389" height="592" key="AVDManager" timestamp="1625723504411">
+      <screen x="1440" y="-155" width="1920" height="1055" />
+    </state>
+    <state x="1795" y="-55" width="1389" height="592" key="AVDManager/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625723504411" />
+    <state width="1545" height="129" key="GridCell.Tab.0.bottom" timestamp="1625724931371">
+      <screen x="1440" y="-155" width="1920" height="1055" />
+    </state>
+    <state width="1545" height="129" key="GridCell.Tab.0.bottom/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625724931371" />
     <state width="1396" height="129" key="GridCell.Tab.0.bottom/0.25.1440.792@0.25.1440.792" timestamp="1625651603588" />
-    <state width="1396" height="129" key="GridCell.Tab.0.center" timestamp="1625651603587">
-      <screen x="0" y="25" width="1440" height="792" />
+    <state width="1545" height="129" key="GridCell.Tab.0.center" timestamp="1625724931371">
+      <screen x="1440" y="-155" width="1920" height="1055" />
     </state>
+    <state width="1545" height="129" key="GridCell.Tab.0.center/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625724931371" />
     <state width="1396" height="129" key="GridCell.Tab.0.center/0.25.1440.792@0.25.1440.792" timestamp="1625651603587" />
-    <state width="1396" height="129" key="GridCell.Tab.0.left" timestamp="1625651603587">
-      <screen x="0" y="25" width="1440" height="792" />
+    <state width="1545" height="129" key="GridCell.Tab.0.left" timestamp="1625724931370">
+      <screen x="1440" y="-155" width="1920" height="1055" />
     </state>
+    <state width="1545" height="129" key="GridCell.Tab.0.left/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625724931370" />
     <state width="1396" height="129" key="GridCell.Tab.0.left/0.25.1440.792@0.25.1440.792" timestamp="1625651603587" />
-    <state width="1396" height="129" key="GridCell.Tab.0.right" timestamp="1625651603587">
-      <screen x="0" y="25" width="1440" height="792" />
+    <state width="1545" height="129" key="GridCell.Tab.0.right" timestamp="1625724931371">
+      <screen x="1440" y="-155" width="1920" height="1055" />
     </state>
+    <state width="1545" height="129" key="GridCell.Tab.0.right/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625724931371" />
     <state width="1396" height="129" key="GridCell.Tab.0.right/0.25.1440.792@0.25.1440.792" timestamp="1625651603587" />
   </component>
 </project>
