@@ -21,3 +21,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+app/build.gradle
+.idea/workspace.xml
+.idea/modules/app/pos-system.app.iml
+.gradle/buildOutputCleanup/outputFiles.bin
+.gradle/6.7.1/javaCompile/taskHistory.bin
+.gradle/6.7.1/javaCompile/classAnalysis.bin
+.gradle/6.7.1/executionHistory/executionHistory.lock
+.gradle/6.7.1/javaCompile/classAnalysis.bin
+.gradle/buildOutputCleanup/buildOutputCleanup.lock

@@ -2,13 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.endura.pos_system">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Possystem">
+        android:theme="@style/Theme.Possystem"
+        android:networkSecurityConfig="@xml/network_security_config" >
 
         <activity
             android:name=".login.LoginActivity"
@@ -23,7 +26,8 @@
 
         <activity
             android:name=".base.BaseActivity"
-            android:theme="@style/Theme.Possystem.NoActionBar" />
+            android:theme="@style/Theme.Possystem.NoActionBar"
+            android:parentActivityName=".login.LoginActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -6,9 +6,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.endura.pos_system.R;
 import com.endura.pos_system.base.BaseActivity;
+import com.endura.pos_system.databse.data_MySQL1;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -18,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private String stringUsername = "test";
     private String stringPassword = "1234";
+    private JSONArray resultArray = null;
 
     private boolean isValid = false;
 
@@ -36,6 +50,16 @@ public class LoginActivity extends AppCompatActivity {
 
                 String inputUsername = username.getText().toString();
                 String inputPassword = password.getText().toString();
+
+                data_MySQL1 dataMySQL = new data_MySQL1();
+
+                Thread thread = new Thread(mutiThread);
+                thread.start();
+
+//                data_MySQL sql = new data_MySQL();
+//                sql.execute(inputUsername, inputPassword);
+
+
                 if (inputUsername.isEmpty() || inputPassword.isEmpty())
                 {
                     Toast.makeText(LoginActivity.this, "Please enter all the details!", Toast.LENGTH_SHORT).show();
@@ -47,18 +71,34 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(LoginActivity.this, "Incorrect credentials entered!", Toast.LENGTH_SHORT).show();
                     }
                     else {
-                        Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
+                         // 開始執行
                         openMainActivity();
+
                     }
                 }
+
             }
         });
     }
 
-
     private boolean validate(String username, String password) {
-        if (username.equals(stringUsername) && password.equals(stringPassword)){
-            return true;
+        try {
+            for (int i = 0; i < resultArray.length(); i++) {
+                JSONObject jsonObject = resultArray.getJSONObject(i);
+                String username_database = jsonObject.getString("username");
+                String password_database = jsonObject.getString("password");
+//                Log.d("TAG", "title:" + username + ", tag:" + password);
+                if (username.equals(username_database) && password.equals(password_database)){
+                    return true;
+                }
+                else if(i == resultArray.length()) {
+                    return false;
+                }
+                else
+                    continue;
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
         return false;
     }
@@ -67,5 +107,60 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BaseActivity.class);
         startActivity(intent);
     }
+
+        private Runnable mutiThread = new Runnable(){
+            public void run()
+            {
+                try {
+                    URL url = new URL("http://10.0.2.2/testGetData.php");
+                    // 開始宣告 HTTP 連線需要的物件，這邊通常都是一綑的
+                    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                    // 建立 Google 比較挺的 HttpURLConnection 物件
+                    connection.setRequestMethod("POST");
+                    // 設定連線方式為 POST
+                    connection.setDoOutput(true); // 允許輸出
+                    connection.setDoInput(true); // 允許讀入
+                    connection.setUseCaches(false); // 不使用快取
+                    connection.connect(); // 開始連線
+
+                    int responseCode =
+                            connection.getResponseCode();
+                    // 建立取得回應的物件
+                    if(responseCode ==
+                            HttpURLConnection.HTTP_OK){
+                        // 如果 HTTP 回傳狀態是 OK ，而不是 Error
+                        InputStream inputStream =
+                                connection.getInputStream();
+                        // 取得輸入串流
+                        BufferedReader bufReader = new BufferedReader(new InputStreamReader(inputStream, "utf-8"), 8);
+                        // 讀取輸入串流的資料
+                        String box = ""; // 宣告存放用字串
+                        String line = null; // 宣告讀取用的字串
+                        while((line = bufReader.readLine()) != null) {
+                            box += line + "\n";
+                            // 每當讀取出一列，就加到存放字串後面
+                        }
+                        inputStream.close(); // 關閉輸入串流
+                        String result = box; // 把存放用字串放到全域變數
+                        resultArray = new JSONArray(result);
+                    }
+                        //建立一個JSONArray並帶入JSON格式文字，getString(String key)取出欄位的數值
+
+                    // 讀取輸入串流並存到字串的部分
+                    // 取得資料後想用不同的格式
+                    // 例如 Json 等等，都是在這一段做處理
+
+                } catch(Exception e) {
+                    e.toString(); // 如果出事，回傳錯誤訊息
+                }
+
+                // 當這個執行緒完全跑完後執行
+                runOnUiThread(new Runnable() {
+                    public void run() {
+
+                    }
+                });
+            }
+        };
 
 }
