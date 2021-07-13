@@ -142,7 +142,7 @@
         tools:ignore="MissingConstraints">
 
         <Button
-            android:id="@+id/monthPicker"
+            android:id="@+id/monthYearPicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
