@@ -24,7 +24,6 @@
         android:layout_marginStart="1072dp"
         android:layout_marginLeft="1072dp"
         android:layout_marginTop="30dp"
-        android:contentDescription="@string/clothing3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clothing1"
         tools:srcCompat="@tools:sample/avatars" />
@@ -36,7 +35,7 @@
         android:layout_marginStart="1072dp"
         android:layout_marginLeft="1072dp"
         android:layout_marginTop="30dp"
-        android:contentDescription="@string/clothing6"
+        android:contentDescription="@string/clothing1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clothing3"
         tools:srcCompat="@tools:sample/avatars" />
@@ -48,7 +47,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:contentDescription="@string/clothing6"
+        android:contentDescription="@string/clothing1"
         app:layout_constraintStart_toEndOf="@+id/clothing6"
         app:layout_constraintTop_toBottomOf="@+id/clothing4"
         tools:srcCompat="@tools:sample/avatars" />
@@ -60,7 +59,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:contentDescription="@string/clothing6"
+        android:contentDescription="@string/clothing1"
         app:layout_constraintStart_toEndOf="@+id/clothing7"
         app:layout_constraintTop_toBottomOf="@+id/clothing5"
         tools:srcCompat="@tools:sample/avatars" />

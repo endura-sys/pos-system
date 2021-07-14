@@ -2,7 +2,6 @@ package com.endura.pos_system.login;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -11,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.endura.pos_system.R;
 import com.endura.pos_system.base.BaseActivity;
-import com.endura.pos_system.databse.data_MySQL1;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,8 +27,10 @@ public class LoginActivity extends AppCompatActivity {
     private EditText password;
     private Button submit;
 
-    private String stringUsername = "test";
-    private String stringPassword = "1234";
+//    private String stringUsername = "test";
+//    private String stringPassword = "1234";
+    private String inputUsername = "";
+    private String inputPassword = "";
     private JSONArray resultArray = null;
 
     private boolean isValid = false;
@@ -44,39 +44,21 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         submit = findViewById(R.id.login_button);
 
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        submit.setOnClickListener(v -> {
 
-                String inputUsername = username.getText().toString();
-                String inputPassword = password.getText().toString();
+            inputUsername = username.getText().toString();
+            inputPassword = password.getText().toString();
 
-                data_MySQL1 dataMySQL = new data_MySQL1();
-
-                Thread thread = new Thread(mutiThread);
-                thread.start();
-
+//                data_MySQL1 dataMySQL = new data_MySQL1();
 //                data_MySQL sql = new data_MySQL();
 //                sql.execute(inputUsername, inputPassword);
 
-
-                if (inputUsername.isEmpty() || inputPassword.isEmpty())
-                {
-                    Toast.makeText(LoginActivity.this, "Please enter all the details!", Toast.LENGTH_SHORT).show();
-                } else {
-                    isValid = validate(inputUsername, inputPassword);
-
-                    if (!isValid)
-                    {
-                        Toast.makeText(LoginActivity.this, "Incorrect credentials entered!", Toast.LENGTH_SHORT).show();
-                    }
-                    else {
-                         // 開始執行
-                        openMainActivity();
-
-                    }
-                }
-
+            if (inputUsername.isEmpty() || inputPassword.isEmpty())
+            {
+                Toast.makeText(LoginActivity.this, "Please enter all the details!", Toast.LENGTH_SHORT).show();
+            } else {
+                Thread thread = new Thread(mutiThread);
+                thread.start();
             }
         });
     }
@@ -144,7 +126,6 @@ public class LoginActivity extends AppCompatActivity {
                         String result = box; // 把存放用字串放到全域變數
                         resultArray = new JSONArray(result);
                     }
-                        //建立一個JSONArray並帶入JSON格式文字，getString(String key)取出欄位的數值
 
                     // 讀取輸入串流並存到字串的部分
                     // 取得資料後想用不同的格式
@@ -157,7 +138,16 @@ public class LoginActivity extends AppCompatActivity {
                 // 當這個執行緒完全跑完後執行
                 runOnUiThread(new Runnable() {
                     public void run() {
+                        isValid = validate(inputUsername, inputPassword);
+                        if (!isValid)
+                        {
+                            Toast.makeText(LoginActivity.this, "Incorrect credentials entered!", Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            // 開始執行
+                            openMainActivity();
 
+                        }
                     }
                 });
             }
