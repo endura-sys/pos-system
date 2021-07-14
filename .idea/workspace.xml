@@ -23,7 +23,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/sidanla/.android/avd/Pixel_3_XL_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/sidanla/.android/avd/tab_7s_resolution_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -51,8 +51,8 @@
       <list>
         <option value="Kotlin Class" />
         <option value="valueResourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,8 +66,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Tab_s7_API_30" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-08T05:51:14.730Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VirtualDevicePath@/Users/sidanla/.android/avd/tab_7s_resolution_API_30.avd" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-07-13T10:14:26.922872Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-view/Users/sidanla/Documents/GitHub/pos-system/app/src/main/java/com/endura/pos_system/MonthView.java_SELECTED" value="MonthView" />
@@ -166,7 +166,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -203,11 +203,14 @@
       <screen x="0" y="25" width="1440" height="792" />
     </state>
     <state x="458" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.792@0.25.1440.792" timestamp="1625713910274" />
-    <state x="266" y="85" width="1042" height="506" key="AVDManager" timestamp="1626162648709">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="266" y="85" width="1042" height="506" key="AVDManager" timestamp="1626234712752">
+      <screen x="0" y="25" width="1440" height="821" />
     </state>
     <state x="266" y="85" width="1042" height="506" key="AVDManager/0.0.1440.900@0.0.1440.900" timestamp="1626162648709" />
     <state x="1795" y="-55" width="1389" height="592" key="AVDManager/0.25.1440.792/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1625723504411" />
+    <state x="266" y="85" width="1042" height="506" key="AVDManager/0.25.1440.817@0.25.1440.817" timestamp="1626172430199" />
+    <state x="266" y="85" width="1042" height="506" key="AVDManager/0.25.1440.821@0.25.1440.821" timestamp="1626234712752" />
+    <state x="266" y="103" width="1042" height="462" key="AVDManager/0.25.1440.822@0.25.1440.822" timestamp="1626162975659" />
     <state x="308" y="221" key="AndroidCreateResourceFileDialog" timestamp="1626053249921">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
