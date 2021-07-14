@@ -23,5 +23,17 @@
     <string name="Previous">Previous</string>
     <string name="Entries">Showing 1 to 10 of 100 entries</string>
     <string name="clothing1">Clothing1</string>
+    <string name="clothing3">Clothing3</string>
+    <string name="clothing6">Clothing6</string>
+
+    <string name="cart">Cart</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="rate">RATE</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="amount">AMOUNT</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="discount">Discount</string>
+    <string name="tax">Tax (0%)</string>
+    <string name="total">Total</string>
 
 </resources>

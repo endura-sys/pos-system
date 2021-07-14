@@ -29,6 +29,9 @@
             android:theme="@style/Theme.Possystem.NoActionBar"
             android:parentActivityName=".login.LoginActivity" />
 
+        <activity android:name=".PopUp_MonthYearPicker"
+            android:theme="@style/AppTheme.popMe" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
