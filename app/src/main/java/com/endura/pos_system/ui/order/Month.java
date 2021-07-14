@@ -1,4 +1,4 @@
-package com.endura.pos_system;
+package com.endura.pos_system.ui.order;
 
 import java.util.ArrayList;
 
