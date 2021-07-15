@@ -10,6 +10,11 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# Ignored Files
+*.bin
+*.lock
+
+
 # Package Files #
 *.jar
 *.war
@@ -30,3 +35,5 @@ app/build.gradle
 .gradle/6.7.1/executionHistory/executionHistory.lock
 .gradle/6.7.1/javaCompile/classAnalysis.bin
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
+.idea/workspace.xml
+local.properties
