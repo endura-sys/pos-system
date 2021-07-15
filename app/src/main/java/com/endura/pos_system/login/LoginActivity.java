@@ -71,9 +71,11 @@ public class LoginActivity extends AppCompatActivity {
                 String password_database = jsonObject.getString("password");
 //                Log.d("TAG", "title:" + username + ", tag:" + password);
                 if (username.equals(username_database) && password.equals(password_database)){
+                    Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
                     return true;
                 }
                 else if(i == resultArray.length()) {
+                    Toast.makeText(LoginActivity.this, "Wrong username or password!", Toast.LENGTH_SHORT).show();
                     return false;
                 }
                 else

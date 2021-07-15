@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,7 +20,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class SaleFragment extends Fragment {
 
     private SaleViewModel saleViewModel;
-    EditText textIn;
     Button buttonAdd;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -36,13 +34,11 @@ public class SaleFragment extends Fragment {
 //                textView.setText(s);
 //            }
 //        });
-
 //        textIn = (EditText) root.findViewById(R.id.add);
         buttonAdd = (Button) root.findViewById(R.id.add);
         LinearLayout containerForText = root.findViewById(R.id.container);
 
         buttonAdd.setOnClickListener(v -> {
-            Log.d("test0", "0");
 
             final View addView = inflater.inflate(R.layout.sales_item, null);
             Log.d("test1", "111");
