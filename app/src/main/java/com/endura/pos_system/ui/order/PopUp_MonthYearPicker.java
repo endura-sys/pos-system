@@ -12,8 +12,9 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import com.endura.pos_system.MainActivity;
 import com.endura.pos_system.R;
 
 public class PopUp_MonthYearPicker extends AppCompatActivity {
@@ -26,6 +27,11 @@ public class PopUp_MonthYearPicker extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popup);
+
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction t = manager.beginTransaction();
+//        android.support.v4.app.FragmentTransaction t = manager.beginTransaction();
+//        Myfragment m4 = new Myfragment();
 
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
@@ -87,15 +93,48 @@ public class PopUp_MonthYearPicker extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View V) {
-//                sendData();
+                sendData();
                 finish();
             }
 
             private void sendData() {
                 String wholeDate = textview2.getText().toString() +", "+ textview3.getText().toString().trim();
-                Intent i = new Intent(PopUp_MonthYearPicker.this, MainActivity.class);
-                i.putExtra("MonthYearPicker", wholeDate);
-                startActivity(i);
+                Intent intent = new Intent(PopUp_MonthYearPicker.this, OrderFragment.class);
+
+//                String value = intent.getStringExtra("oldValue");
+                intent.putExtra("monthYearPicker", wholeDate); //value should be your string from the edittext
+                startActivity(intent); //The data you want to send back
+//                finish(); //That's when you onActivit
+
+//                ViewStub stub = (ViewStub) findViewById(R.id.monthYearPicker);
+//                stub.setLayoutResource(R.layout.fragment_order);
+//                View inflated = stub.inflate();
+
+//                Bundle bundle = new Bundle();
+
+//                OrderFragment orderFragment = new OrderFragment();
+
+
+//                bundle.putString("MonthYearPicker", wholeDate);
+//
+//                Fragmentclass fragInfo = new FragmentClass();
+//                fragInfo.setArguments(bundle);
+//                transaction.replace(R.id.fragment_single, fragInfo);
+//                transaction.commit();
+//                orderFragment.setArguments(data);
+//                t.add(R.id.nav_host_fragment, );
+//                t.commit();
+
+//                Button.replace(R.id.MonthYearPicker, orderFragment).commit();
+
+//                Intent i = new Intent(PopUp_MonthYearPicker.this, MainActivity.class);
+//                i.putExtra("MonthYearPicker", wholeDate);
+//                startActivity(i);
+
+//                final View addView = inflater.inflate(R.layout.sales_item, null);
+//                Log.d("test1", "111");
+//                TextView textOut = (TextView)addView.findViewById(R.id.productName);
+//                textOut.setText(buttonAdd.getText().toString());
             }
         });
     }

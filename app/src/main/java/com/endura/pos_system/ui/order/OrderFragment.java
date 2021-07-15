@@ -9,7 +9,6 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.endura.pos_system.R;
 
@@ -17,11 +16,12 @@ public class OrderFragment extends Fragment {
 
     private OrderViewModel orderViewModel;
     private Button monthyearpickerpopup_confirm, monthyearpickerpopup_cancel, btn;
+    private String myStr;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        orderViewModel =
-                new ViewModelProvider(this).get(OrderViewModel.class);
+//        orderViewModel =
+//                new ViewModelProvider(this).get(OrderViewModel.class);
         View root = inflater.inflate(R.layout.fragment_order, container, false);
 //        final TextView textView = root.findViewById(R.id.text_order);
 //        orderViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
@@ -43,11 +43,25 @@ public class OrderFragment extends Fragment {
                     startActivity(popUpWindow);
                 }
             });
-//            Intent intent = getIntent();
-//            String name = intent.getStringExtra("MonthYearPicker");
 
-//            btn.setText(name);
+//            PopUp_MonthYearPicker monthYearPicker = (PopUp_MonthYearPicker) getActivity();
 
+        myStr = getActivity().getIntent().getStringExtra("monthYearPicker");
+        btn.setText(myStr);
+//        startActivityForResult(intent, someIntValue); //I always put 0 for someIntValue
+
+//In your class
+//        @Override
+//        protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//            super.onActivityResult(requestCode, resultCode, data);
+//            //Retrieve data in the intent
+//            String editTextValue = intent.getStringExtra("valueId");
+//        }
+//
+////            myStr = this.getString("MonthYearPicker");
+
+
+//            btn.setText(myStr);
 
             return root;
     }
