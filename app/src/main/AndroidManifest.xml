@@ -32,6 +32,9 @@
         <activity android:name=".ui.order.PopUp_MonthYearPicker"
             android:theme="@style/AppTheme.popMe" />
 
+<!--        <activity-alias-->
+<!--            android:name=".ui.order.OrderFragment"/>-->
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
