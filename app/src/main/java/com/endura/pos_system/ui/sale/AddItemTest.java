@@ -37,7 +37,7 @@ public class AddItemTest extends Activity {
                 public void onClick(View arg0) {
                     LayoutInflater layoutInflater =
                             (LayoutInflater) getBaseContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                    final View addView = layoutInflater.inflate(R.layout.sales_item_test, null);
+                    final View addView = layoutInflater.inflate(R.layout.sales_item, null);
                     TextView textOut = (TextView)addView.findViewById(R.id.productName);
                     textOut.setText(textIn.getText().toString());
                     Button buttonRemove = (Button)addView.findViewById(R.id.remove);
