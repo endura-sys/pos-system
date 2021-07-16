@@ -94,16 +94,22 @@ public class PopUp_MonthYearPicker extends AppCompatActivity {
             @Override
             public void onClick(View V) {
                 sendData();
-                finish();
+//                finish();
             }
 
             private void sendData() {
                 String wholeDate = textview2.getText().toString() +", "+ textview3.getText().toString().trim();
-                Intent intent = new Intent(PopUp_MonthYearPicker.this, OrderFragment.class);
+
+                OrderFragment fragmentOrder = new OrderFragment();
+
+                Bundle bundle = new Bundle();
+                bundle.putString("String",wholeDate);
+                fragmentOrder.setArguments(bundle);
+//                Intent intent = new Intent(PopUp_MonthYearPicker.this, OrderFragment.class);
 
 //                String value = intent.getStringExtra("oldValue");
-                intent.putExtra("monthYearPicker", wholeDate); //value should be your string from the edittext
-                startActivity(intent); //The data you want to send back
+//                intent.putExtra("monthYearPicker", wholeDate); //value should be your string from the edittext
+//                startActivity(intent); //The data you want to send back
 //                finish(); //That's when you onActivit
 
 //                ViewStub stub = (ViewStub) findViewById(R.id.monthYearPicker);

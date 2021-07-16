@@ -46,7 +46,8 @@ public class OrderFragment extends Fragment {
 
 //            PopUp_MonthYearPicker monthYearPicker = (PopUp_MonthYearPicker) getActivity();
 
-        myStr = getActivity().getIntent().getStringExtra("monthYearPicker");
+//        myStr = getActivity().getIntent().getStringExtra("monthYearPicker");
+        myStr = getArguments().getString("String");
         btn.setText(myStr);
 //        startActivityForResult(intent, someIntValue); //I always put 0 for someIntValue
 
