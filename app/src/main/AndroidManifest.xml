@@ -39,6 +39,11 @@
             android:theme="@style/Theme.Possystem.NoActionBar"
             android:parentActivityName=".login.LoginActivity" />
 
+        <activity
+            android:name=".ui.barcode.BarcodeActivity"
+            android:theme="@style/Theme.Possystem.NoActionBar"
+            android:parentActivityName=".ui.sale.SaleFragment" />
+
         <activity android:name=".ui.order.PopUp_MonthYearPicker"
             android:theme="@style/AppTheme.popMe" />
 

@@ -37,4 +37,6 @@
     <string name="total">Total</string>
     <string name="barcodebtn">Scan Barcode</string>
 
+    <string name="barcode_btn">Scan Barcode</string>
+
 </resources>

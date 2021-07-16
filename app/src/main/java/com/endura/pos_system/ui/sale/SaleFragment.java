@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.endura.pos_system.R;
-import com.endura.pos_system.ui.barcode.barcodeActivity;
+import com.endura.pos_system.ui.barcode.BarcodeActivity;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -74,12 +74,12 @@ public class SaleFragment extends Fragment {
 
         });
 
-        buttonBarcode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openBarcodeScanner();
-            }
-        });
+//        buttonBarcode.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                openBarcodeScanner();
+//            }
+//        });
         buttonBarcode.setOnClickListener(v -> {
             openBarcodeScanner();
         });
@@ -88,7 +88,7 @@ public class SaleFragment extends Fragment {
     }
 
     public void openBarcodeScanner() {
-        Intent myIntent = new Intent(this.getActivity(), barcodeActivity.class);
+        Intent myIntent = new Intent(this.getActivity(), BarcodeActivity.class);
         startActivity(myIntent);
     }
 }
