@@ -1,7 +1,6 @@
 package com.endura.pos_system.ui.order;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
@@ -12,8 +11,6 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.endura.pos_system.R;
 
@@ -28,8 +25,6 @@ public class PopUp_MonthYearPicker extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popup);
 
-        FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction t = manager.beginTransaction();
 //        android.support.v4.app.FragmentTransaction t = manager.beginTransaction();
 //        Myfragment m4 = new Myfragment();
 
@@ -94,7 +89,7 @@ public class PopUp_MonthYearPicker extends AppCompatActivity {
             @Override
             public void onClick(View V) {
                 sendData();
-//                finish();
+                finish();
             }
 
             private void sendData() {
@@ -102,9 +97,14 @@ public class PopUp_MonthYearPicker extends AppCompatActivity {
 
                 OrderFragment fragmentOrder = new OrderFragment();
 
+//                FragmentManager manager = getSupportFragmentManager();
+//                FragmentTransaction t = getSupportFragmentManager().beginTransaction();
+
                 Bundle bundle = new Bundle();
                 bundle.putString("String",wholeDate);
                 fragmentOrder.setArguments(bundle);
+
+                finish();
 //                Intent intent = new Intent(PopUp_MonthYearPicker.this, OrderFragment.class);
 
 //                String value = intent.getStringExtra("oldValue");

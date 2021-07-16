@@ -41,14 +41,21 @@ public class OrderFragment extends Fragment {
                 private void openPopUpWindow() {
                     Intent popUpWindow = new Intent(getActivity(), PopUp_MonthYearPicker.class);
                     startActivity(popUpWindow);
+
+                    Bundle data = getArguments();
+
+                    if (data != null) {
+
+                        myStr = data.getString("String");
+
+                    }
+                    btn.setText(myStr);
                 }
             });
 
 //            PopUp_MonthYearPicker monthYearPicker = (PopUp_MonthYearPicker) getActivity();
 
 //        myStr = getActivity().getIntent().getStringExtra("monthYearPicker");
-        myStr = getArguments().getString("String");
-        btn.setText(myStr);
 //        startActivityForResult(intent, someIntValue); //I always put 0 for someIntValue
 
 //In your class
