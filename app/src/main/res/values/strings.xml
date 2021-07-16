@@ -35,5 +35,6 @@
     <string name="discount">Discount</string>
     <string name="tax">Tax (0%)</string>
     <string name="total">Total</string>
+    <string name="barcodebtn">Scan Barcode</string>
 
 </resources>

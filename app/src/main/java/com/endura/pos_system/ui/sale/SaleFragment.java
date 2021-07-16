@@ -1,5 +1,6 @@
 package com.endura.pos_system.ui.sale;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.endura.pos_system.R;
+import com.endura.pos_system.ui.barcode.barcodeActivity;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -21,6 +23,7 @@ public class SaleFragment extends Fragment {
 
     private SaleViewModel saleViewModel;
     Button buttonAdd;
+    Button buttonBarcode;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -36,13 +39,14 @@ public class SaleFragment extends Fragment {
 //        });
 //        textIn = (EditText) root.findViewById(R.id.add);
         buttonAdd = (Button) root.findViewById(R.id.add);
+        buttonBarcode = (Button) root.findViewById(R.id.open_barcode);
         LinearLayout containerForText = root.findViewById(R.id.container);
 
         buttonAdd.setOnClickListener(v -> {
 
             final View addView = inflater.inflate(R.layout.sales_item, null);
             Log.d("test1", "111");
-            TextView textOut = (TextView)addView.findViewById(R.id.productName);
+            TextView textOut = (TextView) addView.findViewById(R.id.productName);
             textOut.setText(buttonAdd.getText().toString());
 
             // Button add and minus onclick
@@ -51,7 +55,7 @@ public class SaleFragment extends Fragment {
             Button minus = addView.findViewById(R.id.minus);
 
             add.setOnClickListener(v1 ->
-                quantity.setText(String.valueOf(Integer.parseInt(quantity.getText().toString()) + 1)));
+                    quantity.setText(String.valueOf(Integer.parseInt(quantity.getText().toString()) + 1)));
 
             AtomicInteger currentQuantity = new AtomicInteger();
             minus.setOnClickListener(v2 -> {
@@ -59,19 +63,32 @@ public class SaleFragment extends Fragment {
                 if (currentQuantity.get() > 1)
                     quantity.setText(String.valueOf(currentQuantity.get() - 1));
                 else
-                    ((LinearLayout)addView.getParent()).removeView(addView);
+                    ((LinearLayout) addView.getParent()).removeView(addView);
             });
             // Button remove
-            Button buttonRemove = (Button)addView.findViewById(R.id.remove);
+            Button buttonRemove = (Button) addView.findViewById(R.id.remove);
             buttonRemove.setOnClickListener(v3 -> (
-                    (LinearLayout)addView.getParent()).removeView(addView));
+                    (LinearLayout) addView.getParent()).removeView(addView));
 
             containerForText.addView(addView);
 
         });
 
-
+        buttonBarcode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openBarcodeScanner();
+            }
+        });
+        buttonBarcode.setOnClickListener(v -> {
+            openBarcodeScanner();
+        });
 
         return root;
+    }
+
+    public void openBarcodeScanner() {
+        Intent myIntent = new Intent(this.getActivity(), barcodeActivity.class);
+        startActivity(myIntent);
     }
 }
