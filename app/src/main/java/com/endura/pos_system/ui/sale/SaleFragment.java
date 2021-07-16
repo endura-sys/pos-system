@@ -1,6 +1,5 @@
 package com.endura.pos_system.ui.sale;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,7 +14,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.endura.pos_system.R;
-import com.endura.pos_system.ui.barcode.barcodeActivity;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -23,7 +21,6 @@ public class SaleFragment extends Fragment {
 
     private SaleViewModel saleViewModel;
     Button buttonAdd;
-    Button buttonBarcode;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -39,7 +36,6 @@ public class SaleFragment extends Fragment {
 //        });
 //        textIn = (EditText) root.findViewById(R.id.add);
         buttonAdd = (Button) root.findViewById(R.id.add);
-        buttonBarcode= (Button) root.findViewById(R.id.open_barcode);
         LinearLayout containerForText = root.findViewById(R.id.container);
 
         buttonAdd.setOnClickListener(v -> {
@@ -74,26 +70,8 @@ public class SaleFragment extends Fragment {
 
         });
 
-        buttonBarcode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openBarcodeScanner();
-            }
-        });
-        buttonBarcode.setOnClickListener(v -> {
-            openBarcodeScanner();
-        });
-
-
-
 
 
         return root;
     }
-
-    public void openBarcodeScanner(){
-        Intent myIntent = new Intent(this.getActivity(), barcodeActivity.class);
-        startActivity(myIntent);
-    }
-
 }

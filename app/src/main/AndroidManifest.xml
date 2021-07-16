@@ -25,16 +25,6 @@
         </activity>
 
         <activity
-            android:name=".ui.barcode.barcodeActivity"
-            android:theme="@style/Theme.Possystem.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name=".base.BaseActivity"
             android:theme="@style/Theme.Possystem.NoActionBar"
             android:parentActivityName=".login.LoginActivity" />
